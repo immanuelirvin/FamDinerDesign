@@ -1,0 +1,38 @@
+.home-background{
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background_home.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+h1, h6, .home-background a{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    top: 60%;
+    font-size: 35px;
+}
+
+h6{
+    font-size: 25px;
+    top: 70%;
+}
+
+.home-background a{
+    top: 80%;
+    text-decoration: none;
+    background: rgb(53, 48, 48);
+    padding: 10px;
+    border-radius: 30px;
+}

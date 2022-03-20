@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- font-awesome.min.css digunakan untuk fa fa-caret-down-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         .forms h3, .forms div, .forms button{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            
+        }
+
+        .forms input{
+            border: none;
+            outline: none;
+            border-bottom: solid 1px black;
+        }
+
+        .forms button{
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background: none;
+            padding: 10px 40px 10px 40px;
+            background: rgb(53, 48, 48);
+            cursor: pointer;
+            
+        }
+
+        .forms{
+            height: 700px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .form-container{
+            width: 500px;
+            height: 450px;
+            
+        }
+
+        .form-container .baris-radio{
+            display: flex;
+            flex-direction: row;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <img src="images/logo.svg" alt="" id=logo>
+        <div class="nav-header">
+            <a href="#">REGISTER</a>
+            <a href="login.html">LOGIN</a>
+            
+        </div>
+        
+    </section>
+    
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbutton">MENU <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menu.html#burger">BURGER</a>
+                <a href="menu.html#ricepasta">RICE & PASTA</a>
+                <a href="menu.html#seafood">SEAFOOD</a>
+            </div>
+        </div>
+        <a href="aboutus.html">ABOUT US</a>
+    </nav>
+    
+        <form action="" method="" class="forms">
+            <h3 style="font-size: 30px;"><strong>Register</strong></h3>
+            <div class="form-container">
+                <div>
+                    <label for="nama">Nama</label> <br />
+                    <input type="text" id="input-nama" name="nama"><br />
+                </div>
+
+                <div>
+                    <label for="name-email">Email</label> <br />
+                    <input type="email" id="regis-email" name="name-email"><br />
+                </div>
+
+                <div>
+                    <label for="name-gender">Gender</label><br />
+                    <div class="baris-radio">
+                        <input type="radio" name="name-gender" id="male" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="name-gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div>
+                    <br /><label for="name-city">City</label>
+                    <select name="name-city" id="city">
+                        <option value="0" default>--- Select City ---</option>
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bandung</option>
+                        <option value="3">Surabaya</option>
+                    </select>
+                </div>
+
+                <div>
+                    <br /><label for="name-password">Password</label><br />
+                    <input type="password" id="input-password-regis" name="name-password">
+                </div>
+                    
+                <div>
+                    <br /><label for="name-confirm-password">Confirm Password</label><br />
+                    <input type="password" id="input-confirm-password" name="name-confirm-password">
+                </div>
+                
+                
+            </div>
+            <button type="button" id="submit-register">Register</button>
+        </form>
+    </div>
+
+    <section class="footer">
+        <div class="link">
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a>
+            <a href="https://facebook.com/"><img src="images/facebook.png" alt=""></a>
+            <a href="https://instagram.com/"><img src="images/instagram.png" alt=""></a>
+        </div>
+        
+        <h5>Copyright @ 2021 Irvin. All Rights Reserved</h5>
+    </section>
+    <script src="validasiRegis.js"></script>
+</body>
+</html>

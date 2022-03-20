@@ -1,0 +1,69 @@
+.menu-wallpaper{
+    padding: 0;
+    margin: 0;
+    background:url(images/background_menu.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex p{
+    width: 900px;
+}
+
+.display-block{
+    display: block;
+}
+
+.menu-box{
+    background-color: white;
+    height: 210px;
+    width: 30%;
+    margin-inline: 15px;
+    border-radius: 20px;
+    
+}
+
+.flex{
+    position: absolute;
+    margin-bottom: 400px;
+}
+
+.menu-box img{
+    margin-top: 35px;
+    height: 30%;
+}
+
+.menu-info h5{
+    height: 30%;
+    margin: 17px;
+    
+}
+
+.flex h1, p{
+    color: white;
+}
+
+.most-popular button{
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(255, 230, 0);
+    width: 100%;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 0 0 20px 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- font-awesome.min.css digunakan untuk fa fa-caret-down-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .aboutus-content{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(30,32,38,255);
+            width: 100%;
+            height: 800px;  
+            text-align: center;
+        }
+        
+        .aboutus-box{
+            width: 53%;
+            display: inline-block;
+            text-align: justify;
+            margin-left: 23%;
+            
+        }
+        .aboutus-box p, .aboutus-box h2{  
+            color: white;
+        }
+
+        .title h1{
+            background-color: rgb(53, 48, 48);
+            margin: 0;
+            color: white;
+            padding: 40px;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <img src="images/logo.svg" alt="" id=logo>
+        <div class="nav-header">
+            <a href="register.html">REGISTER</a>
+            <a href="login.html">LOGIN</a>  
+        </div>  
+    </section>
+    
+    <nav class="navbar">
+        <a href="index.html"  class="button">HOME</a>
+        <div class="dropdown">
+            <button class="dropbutton"  class="button">MENU <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menu.html#burger">BURGER</a>
+                <a href="menu.html#ricepasta">RICE & PASTA</a>
+                <a href="menu.html#seafood">SEAFOOD</a>
+            </div>
+        </div>
+        <a href="#"  class="button active">ABOUT US</a>
+    </nav>
+
+    <section class="aboutus-content">
+        <div class="title">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="aboutus-box" style="line-height: 1.6; margin-top: 100px;">
+                <p>Founded in 2001, FamDiner started as a humble small kitchen in Kemanggisan, Jakarta serving
+                    rice dishes to local population. As time progresses, more customers come to visit our restaurant,
+                    and so we decided to expand our menu and locations to other area and provinces. Today, we can
+                    proudly say that we have opened 75+ locations spread in Sumatra and Java island. We have a
+                    commitment to stay true to our humble origin which is to serve customers with high-quality food
+                    so that they can leave with an unforgettable experience.</p>
+
+                <h2>Contact</h2>
+                <p>Customer Service Number : +6283789456759</p>
+                <p>Customer Service Email : admin@famdiner.com</p>
+        </div>
+        
+        
+    </section>
+
+    <section class="footer">
+        <div class="link">
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a>
+            <a href="https://facebook.com/"><img src="images/facebook.png" alt=""></a>
+            <a href="https://instagram.com/"><img src="images/instagram.png" alt=""></a>
+        </div>
+        
+        <h5>Copyright @ 2021 Irvin. All Rights Reserved</h5>
+    </section>
+</body>
+</html>

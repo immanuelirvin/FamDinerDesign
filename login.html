@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- font-awesome.min.css digunakan untuk fa fa-caret-down-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .forms h3, .forms div, .forms button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .forms input{
+            border: none;
+            outline: none;
+            border-bottom: solid 1px black;
+        }
+
+        .forms button{
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background: none;
+            padding: 10px 40px 10px 40px;
+            background: rgb(53, 48, 48);
+            cursor: pointer;
+            
+        }
+
+        .login{
+            cursor: pointer;
+             
+        }
+        .forms{
+            height: 450px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-register a{
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <img src="images/logo.svg" alt="" id=logo>
+        <div class="nav-header">
+            <a href="register.html">REGISTER</a>
+            <a href="#">LOGIN</a>
+            
+        </div>
+        
+    </section>
+    
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbutton">MENU <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menu.html#burger">BURGER</a>
+                <a href="menu.html#ricepasta">RICE & PASTA</a>
+                <a href="menu.html#seafood">SEAFOOD</a>
+            </div>
+        </div>
+        <a href="aboutus.html">ABOUT US</a>
+    </nav>
+
+    <form action="" method="" class="forms">
+
+        <h3 style="font-size: 30px;"><strong>Login</strong></h3>
+        <div>
+            <label for="name-email">Email</label> <br />
+            <input type="email" id="input-email" name="name-email">
+        </div>
+        <div>
+            <br /><label for="name-password">Password</label><br />
+            <input type="password" id="input-password" name="name-password">
+        </div>
+        <br />
+        <button type="button" id="submit-login">Login</button>
+
+        <div class="text-register">
+            <h5>Want to join us? Register <a href="register.html">here!</a></h5>
+        </div>
+    </form>
+
+    <section class="footer">
+        <div class="link">
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a>
+            <a href="https://facebook.com/"><img src="images/facebook.png" alt=""></a>
+            <a href="https://instagram.com/"><img src="images/instagram.png" alt=""></a>
+        </div>
+        <h5>Copyright @ 2021 Irvin. All Rights Reserved</h5>
+    </section>
+    <script src="validasi.js"></script>
+</body>
+</html>
